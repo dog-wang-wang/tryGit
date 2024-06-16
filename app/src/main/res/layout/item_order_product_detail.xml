@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/order_item_detail_content"
+        android:layout_weight="5">
+        <TextView
+            android:id="@+id/tv_order_detail_item_name"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="@dimen/order_item_detail_text_size_big"
+            tools:text="这里是商品名称"/>
+        <TextView
+            android:id="@+id/tv_order_detail_item_num"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/order_item_detail_content"
+            android:textSize="@dimen/order_item_detail_text_size_small"
+            android:textColor="@color/grey"
+            tools:text="要买的数量" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/order_item_detail_content"
+        android:layout_weight="2"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_order_detail_item_price"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/order_item_detail_content_price"
+            tools:text="这里是商品单价"
+            android:textColor="@color/red"
+            android:textSize="@dimen/item_order_text_size_small"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/tv_order_detail_item_sum_price"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/order_item_detail_content_price"
+            tools:text="这里是商品总价"
+            android:textColor="@color/red"
+            android:textSize="@dimen/item_order_text_size_small"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>
