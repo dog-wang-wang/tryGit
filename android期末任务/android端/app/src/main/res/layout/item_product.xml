@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_item_product"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_border"
+    android:orientation="vertical"
+    android:gravity="bottom">
+    <ImageView
+        android:id="@+id/iv_item_product_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:src="@mipmap/ic_launcher"
+        android:scaleType="fitCenter"
+        android:padding="@dimen/border_width"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_item_product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="bottom|center_horizontal"
+        tools:text="这里是商品名"
+        android:textSize="@dimen/item_product_text_size_small"/>
+
+    <TextView
+        android:id="@+id/tv_item_product_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|center_horizontal"
+        tools:text="这里是商品单价"
+        android:textSize="@dimen/item_product_text_size_big"
+        android:textColor="@color/red"
+        />
+
+
+</LinearLayout>

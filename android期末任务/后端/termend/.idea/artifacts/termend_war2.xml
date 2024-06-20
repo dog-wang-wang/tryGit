@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="termend:war2">
+    <output-path>$PROJECT_DIR$/../../../linuxTomcatWar</output-path>
+    <root id="archive" name="termend_war.war">
+      <element id="artifact" artifact-name="termend:war exploded" />
+    </root>
+  </artifact>
+</component>
